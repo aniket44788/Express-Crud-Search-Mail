@@ -1,5 +1,5 @@
 const express = require("express")
-const schema = require("./Schema")
+const schema = require("../Schema-Model/Schema")
 const deleteRouter = express.Router()
 
 deleteRouter.delete( "/:id" , async (req,res)=>{

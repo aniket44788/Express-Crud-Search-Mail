@@ -1,7 +1,7 @@
 const express = require("express");
 const create = express.Router();
-const schema = require("./Schema");
-const transporter = require("./utils/mail");
+const schema = require("../Schema-Model/Schema");
+const transporter = require("../utils/mail");
 create.post("/", async (req, res) => {
   try {
     const { name, last, email, phone, age, gender } = req.body;

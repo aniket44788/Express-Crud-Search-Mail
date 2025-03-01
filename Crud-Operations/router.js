@@ -1,5 +1,5 @@
 const express = require("express")
-const schema = require("./Schema")
+const schema = require("../Schema-Model/Schema")
 const Router = express.Router()
 
 Router.get("/", async (req,res)=>{
