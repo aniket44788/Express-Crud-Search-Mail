@@ -15,7 +15,7 @@ app.use("/router", Router)
 app.use("/delete", deleteRouter)
 // app.use("/find", Router)
 
-main()
+main().catch((err) => console.log(err));
 
 app.listen(port, () => {
   console.log(" server is running ");

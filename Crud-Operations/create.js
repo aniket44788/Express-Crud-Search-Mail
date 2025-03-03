@@ -46,7 +46,7 @@ create.post("/mail", async (req, res) => {
       to: process.env.NODE_EMAIL,
       subject: sub,
       text: msg,
-      html: `<h1 style="color:red;">${name}</h1>`,
+
     });
     return res.status(200).json({msg:"Message sent: %s", data:info.messageId});
   } catch (error) {
